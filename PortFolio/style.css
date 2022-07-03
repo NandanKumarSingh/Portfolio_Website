@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    background-color: rgb(126, 120, 120);
+    font-family: 'Ubuntu', sans-serif;
+    height: 100vh;
+    transition: transform 0.3s ease-in;
+    position: absolute;
+}
+
+.sidebar nav {
+    padding: 40px;
+}
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 30px;
+    padding: 30px 0;
+}
+.sidebar nav li a{
+    text-decoration: none;
+    color: black;
+}
+.main {
+    width: 90vw;
+}
+
+.container {
+    display: flex;
+}
+
+.infocontainer {
+    height: 60vh;
+    width: 80vw;
+    margin: 145px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devinfo {
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'PT Serif', serif;
+}
+
+.hello {
+    font-size: 3em;
+    font-family: 'PT Serif', serif;
+}
+
+.name {
+    font-size: 3em;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.about {
+    font-size: 2.4em;
+}
+
+.moreabout {
+    font-size: 2em;
+    margin-top: 22px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.buttons {
+    margin-top: 2.1em;
+    font-size: 15px;
+}
+
+.btn{
+    padding: 10px 15px;
+    border-radius: 11px;
+    background-color: rgb(130, 184, 185);
+    color: black;
+    font-weight: bold;
+    font-size: 2em;
+    margin: 3px 3px;
+    cursor: pointer;
+}
+.btn-sm{
+    font-size: 14px;
+    padding: 8px 15px;
+    margin: 10px 0;
+}
+.btn:hover {
+    color: rgb(130, 184, 185);
+    background-color: black;
+}
+
+.devpic img {
+    height: 60vh;
+}
+.contactform{
+    padding: 0 35px;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 80px;
+}
+.contactform h1{
+    font-family: 'PT Serif', serif;
+}
+.contactform form div{
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    margin: 0 90px;
+}
+.contactform form div input{
+    margin: 0 40px;
+}
+.contactform form div input{
+    border-radius: 4px;
+    margin: 6px 0 0 0;
+    padding: 3px;
+}
+.blogcontainer{
+    margin: 0 90px;
+}
+#emailHelp{
+    font-size: 10px;
+    color: rgb(17, 24, 131);
+    margin: 0 5px;
+    padding: 3px 0 0 0;
+}
+
+#form-check{
+    flex-direction: row;
+}
+#form-check input{
+    width: 24px;
+    margin: 3px 0;
+}
+.blogitem{
+    margin: 20px;
+    font-family: 'PT Serif', serif;
+}
+.blogcontainer h1{
+    font-family: 'PT Serif', serif;
+    margin:  80px;
+}
+.blogitem p{
+    font-family: 'Ubuntu', sans-serif;
+}
+h1{
+    font-family: 'PT Serif', serif;
+    margin: 22px;
+}
+p{
+    font-family: 'Ubuntu', sans-serif;
+}
+.intro{
+    margin: 35px 90px;
+}
+.intro h2{
+    font-family: 'PT Serif', serif;
+    margin: 12px;
+}
+.intro p{
+    font-family: 'PT Serif', serif;
+    margin: 12px;
+}
+.skillcontainer{
+    padding: 12px;
+}
+.skill{
+    width: 200px;
+    height: 5px;
+    background-color: red;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+.skillitem{
+    display: flex;
+    align-items: center;
+    font-family: 'PT Serif', serif;
+}
+.hundred{
+    width: 265px;
+    background-color: darkred;
+}
+.fifty{
+    width: 132px;
+    background-color: blueviolet;
+}
+.t5{
+    width: 65px;
+    background-color: cornflowerblue;
+}
+.sidebargo{
+    transform: translate(-450px, 0px);
+    position: absolute;
+}
+@media (max-width: 800px){
+    /* *{
+        background-color: rgb(91, 127, 163);
+    }
+    .sidebar{
+        transform: translate(-450px, 0px);
+        position: absolute;
+    } */
+    .buttons{
+        font-size: 5px;
+    }
+    .devinfo{
+        font-size: 10px;
+    }
+    .devpic{
+        display: none;
+    }
+}
+.hamberger{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+.ham{
+    margin-top: 5px;
+    margin-left: 8px;
+}
+.cross{
+    margin-left: 183px ;
+    margin-top: 6px;
+}
+.intro, .blogcontainer, contactform{
+    margin: 45px 8px;
+}
